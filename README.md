@@ -35,11 +35,3 @@ chmod +x scripts/*.sh
 
 ## Author
 Nikhil Reddy Pishati
-
-
-- top
-- free
-- df
-
-## Author
-Nikhil
