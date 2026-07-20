@@ -1,0 +1,192 @@
+#!/bin/bash
+
+green="\e[32m"
+red="\e[31m"
+yellow="\e[33m"
+blue="\e[34m"
+magentha="\e[35m"
+cyan="\e[36m"
+white="\E[37m"
+black="\E[30m"
+reset="\e[0m"
+echo -e "${YELLOW} *************************************${RESET}"
+echo
+echo -e "${MAGENTHA}        👤 USER MANAGEMENT  ${RESET}           "
+echo
+echo -e "${YELLOW} *************************************${RESET}"
+echo "1. User Information"
+echo "2. Add User"
+echo "3. Delete User"
+echo "4. Change password"
+echo "5. Lock User"
+echo "6. Unlock User"
+echo "7. List all the users"
+echo "8. Exit"
+read -p "Enter Your Choice :" choice
+case $choice in
+1)
+echo -e "${YELLOW} *************************************${RESET}"
+echo
+echo -e "${MAGENTHA}        👤 USER INFORMATION  ${RESET}           "
+echo
+echo -e "${YELLOW} *************************************${RESET}"
+echo
+echo -e "${WHITE} Current logged-in User :${RESET}" $(whoami)
+#Displays current user Name
+echo
+echo -e "${GREEN} User Details :${RESET}" $(id)
+#Displays User id ect...
+echo
+echo -e "${RED} All Logged-in Users :${RESET}" $(uname -a)
+# Displays All current logged in Users
+echo
+echo -e "${BLUE} Host : ${RESET}" $(hostname)
+# Displays Only Hostname 
+echo
+echo " Home Directory :" $HOME
+#Displays Directory Name
+echo
+echo " User Groups :" $(groups)
+# Displays groups if any
+echo
+echo " Sudo Access :"
+if groups | grep -qw "sudo"
+then
+echo -e "${GREEN} User Has Sudo Access ${RESET}"
+else
+echo -e "${RED} Sorry No Sudo Access ${RESET}"
+fi
+echo
+echo -e " ${MAGENTHA} Current Shell :${RESET}" $SHELL
+echo -e "${YELLOW} *************************************${RESET}"
+echo
+echo -e "${GREEN}             👤 USER INFORMATION ENDED    ${RESET}"
+echo
+echo -e "${YELLOW} *************************************${RESET}"
+;;
+
+2) echo
+echo "Please Enter User Name" 
+read Name
+if id "$Name" >/dev/null 2>&1
+then
+echo -e "${red} $Name already Existed $(reset)"
+else
+sudo useradd -m "$Name"
+if id "$Name" >/dev/null 2>&1
+then
+echo
+echo "set Password for : $Name"
+sudo passwd "$Name"
+echo -e "${green} User named $Name is Created successfully${reset}"
+echo "$(date) user "$Name" is created Successfully " >> ../logs/toolkit.log
+else
+echo -e "${red} Failed to create user${reset}"
+fi
+fi
+echo
+echo "You want to see all users (y/n)"
+read input
+if [ "$input" = "y" ] || [ "$input" = "Y" ]
+then
+echo "$(cut -d: -f1 /etc/passwd) "
+elif [ "$input" = "n" ] || [ "$input" = "N" ]
+then
+exit 1
+else
+echo "invalid Input"
+fi
+echo ;;
+
+3)
+echo "Please enter username to be Deleted"
+read Name
+if id "$Name" >/dev/null 2>&1
+then
+sudo userdel -r "$Name" >/dev/null 2>&1
+if id "$Name" >/dev/null 2>&1
+then
+echo "Failed to delete User $Name"
+else
+echo -e "${green} $Name Is Deleted Successfully ${reset}"
+echo "$(date) user " $Name" is deleted Successfully " >> ../logs/toolkit.log
+fi
+else
+echo -e "${red} $Name Doesnot Exist ${reset}"
+fi
+read -p " You want to see all users (y/n) " input
+if [ "$input" = "y" ] || [ "$input" = "Y" ]
+then
+cut -d: -f1 /etc/passwd
+elif [ "$input" = "n" ] || [ "$input" = "N" ] >/dev/null 2>&1
+then
+echo "Exiting"
+exit
+else
+echo "Invalid Input"
+fi
+echo
+;;
+4) echo
+echo -e "${yellow} Please enter user name : "
+read Name
+if id "$Name" >/dev/null 2>&1
+then
+sudo passwd "$Name"
+if [ $? -eq 0 ]
+then
+echo -e "${green} Password Changed Successfully ${reset} "
+echo "$(date) user " $Name" password changed Successfully " >> ../logs/toolkit.log
+else
+echo -e "${red} Unable to change Password ${reset} "
+fi
+else
+echo -e "${red} $Name not found ${reset} "
+fi ;;
+5) echo
+	echo "Enter User Name : "
+read Name
+if id "$Name" >/dev/null 2&>1
+then
+sudo passwd -l "$Name" >/dev/null 2>&1
+if [ $? -eq 0 ]
+then
+echo " $Name locked Successfully "
+else
+echo "Unable to lock $Name "
+fi
+else
+echo "no user found"
+fi
+;;
+6)  echo
+        echo "Enter User Name : "
+read Name
+if id "$Name" >/dev/null 2&>1
+then
+sudo passwd -u "$Name" >/dev/null 2>&1
+if [ $? -eq 0 ]
+then
+echo " $Name unlocked Successfully "
+else
+echo "Unable to unlock $Name "
+fi
+else
+echo "no user found"
+fi ;;
+7) echo 
+echo -e "${blue} =================================================== ${reset}"
+echo
+echo -e "${yellow}                     LISTING ALL USERS ${reset}"
+echo
+echo -e "${blue} =================================================== ${reset}"
+cut -d: -f1 /etc/passwd
+echo
+echo -e "${blue} =================================================== ${reset}"
+read -p "press Enter to Return to Main Menu .."
+./menu.sh
+;;
+8) echo "Good Bye"
+exit 1 ;;
+*) echo "invalid Input ";;
+esac
