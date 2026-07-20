@@ -1,42 +1,42 @@
 # Linux Admin Toolkit
 
-A Bash-based Linux Administration Toolkit that automates common system administration tasks.
+A linux Administration Toolkit built using Bash Scripting to automate common system administration tasks.
 
 ## Features
+- System Information
+- User Management
+- Service Management
+- Health Check
+- Memory Monitoring
+- Disk Monitoring
+- Backup Utility
+- Project Setup Automation
+- Logging
 
-### User Management
-- View user information
-- Add user
-- Delete user
-- Change password
-- Lock user
-- Unlock user
-- List all users
+  ## Technologies Used
+  - Bash Shell
+  - Linux
+  - Git
+  - GitHub
 
-### Project Setup
-- Create project directory structure
-- Generate README file
-- Create source, docs, logs and config folders
+### Project Structure
+linux_admin_toolkit/
+├── scripts/
+├── logs/
+├── backups/
+├── projects/
+├── README.md
+└── VERSION
 
-### Backup Manager
-- Backup directories
-- Create compressed tar.gz archives
-- View backup contents
+## How to Run
+'''bash
+chmod +x scripts/*.sh
+./scripts/menu.sh
 
-### Health Check
-- CPU Usage
-- Memory Usage
-- Disk Usage
-- System Uptime
-- Top CPU Processes
-- Top Memory Processes
+## Author
+Nikhil Reddy Pishati
 
-## Technologies
-- Bash Shell Scripting
-- Linux Commands
-- tar
-- awk
-- grep
+
 - top
 - free
 - df
