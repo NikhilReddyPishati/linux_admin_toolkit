@@ -31,14 +31,14 @@ case $choice in
 7)./service_manager.sh;;
 8)./health_check.sh;;
 9)echo -e "${RED} Thank you for using Linux Administration toolkit";;
-*)echo "invalid Input"
+*)echo "Invalid Input"
 esac
 if [ $choice -eq 9 ]
 then
 break
 fi
 echo
-read -p"Please Enter to Continue......"
+read -p "Please Enter to Continue......"
 clear
 done
 
