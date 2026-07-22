@@ -16,7 +16,7 @@ echo "kernel version         : $(uname -r)"
 echo "system Uptime          : $(uptime -p)"
 echo "IP Address             : $(hostname -I)"
 echo "************************************"
-echo "             MEMORY USAGE                "
+echo "             MEMORY USAGE :               "
 echo "************************************"
 free -h
 
