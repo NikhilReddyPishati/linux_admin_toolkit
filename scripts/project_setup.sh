@@ -7,10 +7,12 @@ echo "******************************************"
 echo
 read -p "Enter Your Project Name :" project_name
 if [ -d "../projects/$project_name" ]
+# -d verifies whether there is a directory exists or not
 then
 echo "Project Already Exists"
 exit 1
 else
+#it creates all the required files and Directories
 mkdir "../projects/$project_name"
 mkdir "../projects/$project_name/src"
 mkdir "../projects/$project_name/docs"
@@ -18,7 +20,7 @@ mkdir "../projects/$project_name/logs"
 mkdir "../projects/$project_name/config"
 touch "../projects/$project_name/README.md"
 fi
-#we can also create these files using advanced features of Linux Like ::: mkdir "../Projects/Project_name/{src,docs,logs,config}
+#we can also create these files using advanced features of Linux Like Directly ::: mkdir "../Projects/Project_name/{src,docs,logs,config}
 echo
 echo "Project Named '$project_name' Is Successfully Created with its Related Files"
 echo "$(date) : Project '$project_name' is created successfully.">> ../logs/toolkit.log
