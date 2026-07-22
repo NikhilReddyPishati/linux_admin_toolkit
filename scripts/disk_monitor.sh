@@ -44,7 +44,7 @@ usage=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')
 
 if [ "$usage" -ge 80 ]
 then
-echo -e "${red}a⚠️W Warning: Disk usage is ${usage}%${reset}"
+echo -e "${red} ⚠️Warning: Disk usage is ${usage}%${reset}"
 else
 echo -e "${green} Disk usage is healthy (${usage}%).${reset}"
 fi
