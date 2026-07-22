@@ -31,6 +31,7 @@ linux_admin_toolkit/
 ## How to Run
 '''bash
 chmod +x scripts/*.sh
+
 ./scripts/menu.sh
 
 ## Author
