@@ -8,6 +8,7 @@ cyan="\e[36m"
 white="\E[37m"
 black="\E[30m"
 reset="\e[0m"
+
 echo -e "${blue} =====================================================================================${reset}"
 echo
 echo -e "${magentha}                             🧠 MEMORY MONITORING   ${reset}"
