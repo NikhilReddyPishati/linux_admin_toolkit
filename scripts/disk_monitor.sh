@@ -46,9 +46,8 @@ if [ "$usage" -ge 80 ]
 then
 echo -e "${red} ⚠️Warning: Disk usage is ${usage}%${reset}"
 else
-echo -e "${green} Disk usage is healthy (${usage}%).${reset}"
+echo -e "${green}💚 Disk usage is healthy (${usage}%).${reset}"
 fi
-echo " $usage"%
 echo
 echo -e "${magentha} =============================================================================================================== ${reset}"
 echo
