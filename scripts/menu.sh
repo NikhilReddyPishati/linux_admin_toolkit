@@ -31,7 +31,7 @@ case $choice in
 7)./service_manager.sh;;
 8)./health_check.sh;;
 9)echo -e "${RED} Thank you for using Linux Administration toolkit";;
-*)echo "Invalid Input"
+*)echo "Invalid Input Please Choose 1--9 "
 esac
 if [ $choice -eq 9 ]
 then
