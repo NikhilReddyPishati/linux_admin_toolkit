@@ -26,15 +26,13 @@ echo "Project Named '$project_name' Is Successfully Created with its Related Fil
 echo "$(date) : Project '$project_name' is created successfully.">> ../logs/toolkit.log
 echo "Do You Want to enter into project $project_name (y/n)"
 read input
-if ["$input" = "y" ] || [ "$input" = "Y" ]
+if [ "$input" == "y" ] || [ "$input" == "Y" ];
 then
-cd $project_name
-elif [ "$input" = "n" ] || [ "$input" = "N" ]
+cd "../projects/$project_name" && exec bash
+elif [ "$input" == "n" ] || [ "$input" == "N" ];
 then
 echo "Exiting"
 else
 echo "Invalid Input"
 fi
 read -p "Press Enter to return to Main Menu...."
-./menu.sh
-
