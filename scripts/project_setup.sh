@@ -29,6 +29,7 @@ read input
 if [ "$input" == "y" ] || [ "$input" == "Y" ];
 then
 cd "../projects/$project_name" && exec bash
+#  launches a new shell it tells the script to open a new nested shell inside the target directory
 elif [ "$input" == "n" ] || [ "$input" == "N" ];
 then
 echo "Exiting"
