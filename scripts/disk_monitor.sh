@@ -20,13 +20,13 @@ echo "$(df -h)"
 echo
 echo -e "${yellow} Project size ${reset}" $(du -sh)
 echo
-echo -e "${cyan}                                             Connected Storage Devices ${reset}"
+echo -e "${cyan}                                             Connected Storage Devices      ${reset}"
 echo "$(lsblk)"
 echo
-echo -e "${cyan}                                  List of Top 10 Storage Consuming Directories ${reset}"
+echo -e "${cyan}                                  List of Top 10 Storage Consuming Directories     ${reset}"
 du -h "$HOME" 2>/dev/null | sort -hr | head -10
 echo
-echo -e "${red}                                         Top 10 Files Which Consume Storage {reset}"
+echo -e "${red}                                         Top 10 Files Which Consume Storage   ${reset}"
 echo
 find "$HOME" -type f -exec ls -lh {} + 2>/dev/null | sort -k5 -hr | head -10
 # $HOME -it selects and searches in Home directory
