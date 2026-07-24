@@ -100,7 +100,7 @@ else
 echo -e "${red} ❌ $Service is not installed"
 fi ;;
 6) echo
-read -p "Enter the Service name in small letters To Disable :" Service
+read -p "Enter the Service name in small letters To Disable 🧰 :" Service
 if systemctl list-unit-files --type=service | grep -qw "$Service.service"
 then
 sudo systemctl disable "$Service"  >/dev/null 2>&1
