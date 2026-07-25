@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "********************************************"
-echo " "
+echo 
 echo "           SYSTEM INFORMATION               "
-echo " "
+echo 
 echo "********************************************"
 host_name=$(hostname)
 date=$(date)
@@ -15,12 +15,12 @@ echo "Current Date           : $date"
 echo "kernel version         : $(uname -r)"
 echo "system Uptime          : $(uptime -p)"
 echo "IP Address             : $(hostname -I)"
-echo "************************************"
+echo "***************************************"
 echo "             MEMORY USAGE :               "
-echo "************************************"
+echo "***************************************"
 free -h
 
-echo "************************************"
+echo "***************************************"
 echo :"            DISK USAGE : "
-echo "************************************"
+echo "***************************************"
 df -h
