@@ -15,7 +15,7 @@ echo "Current Date           : $date"
 echo "kernel version         : $(uname -r)"
 echo "system Uptime          : $(uptime -p)"
 echo "IP Address             : $(hostname -I)"
-echo "***************************************"
+echo "*****************************************"
 echo "             MEMORY USAGE :               "
 echo "***************************************"
 free -h
