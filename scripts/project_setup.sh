@@ -11,7 +11,7 @@ reset="\e[0m"
 
 echo "******************************************"
 echo
-echo "            PROJECT SETUP                 "
+echo -e "  ${yellow}        PROJECT SETUP          ${reset}       "
 echo
 echo "******************************************"
 echo
