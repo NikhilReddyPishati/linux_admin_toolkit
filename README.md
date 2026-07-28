@@ -21,6 +21,7 @@ A linux Administration Toolkit built using Bash Scripting to automate common sys
 
 ### Project Structure
 linux_admin_toolkit/
+
 ├── scripts/
 
 ├── logs/
@@ -37,6 +38,7 @@ Testing jenkins webhook
 
 ## How to Run
 '''bash
+
 chmod +x scripts/*.sh
 
 ./scripts/menu.sh
