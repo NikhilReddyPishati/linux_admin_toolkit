@@ -25,6 +25,7 @@ echo "7. List all the users"
 echo "8. Exit"
 read -p "Enter Your Choice :" choice
 case $choice in
+
 1)
 echo -e "$yellow} *************************************${reset}"
 echo
@@ -166,6 +167,7 @@ else
 echo "no user found"
 fi
 ;;
+
 6)  
 echo
 echo "Enter User Name : "
@@ -182,6 +184,7 @@ fi
 else
 echo "no user found"
 fi ;;
+
 7)
 echo 
 echo -e "${blue} =================================================== ${reset}"
@@ -199,5 +202,6 @@ read -p "press Enter to Return to Main Menu .."
 8)
 echo "Good Bye"
 exit 1 ;;
+
 *) echo "invalid Input ";;
 esac #end case statements
