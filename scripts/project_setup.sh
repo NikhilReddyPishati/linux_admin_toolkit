@@ -1,4 +1,14 @@
 #!/bin/bash
+green="\e[32m"
+red="\e[31m"
+yellow="\e[33m"
+blue="\e[34m"
+magentha="\e[35m"
+cyan="\e[36m"
+white="\E[37m"
+black="\E[30m"
+reset="\e[0m"
+
 echo "******************************************"
 echo
 echo "            PROJECT SETUP                 "
@@ -9,7 +19,7 @@ read -p "Enter Your Project Name :" project_name
 if [ -d "../projects/$project_name" ]
 # -d verifies whether there is a directory exists or not
 then
-echo "Project Already Exists"
+echo -e "$(red) Project Already Exists $(reset)"
 exit 1
 else
 #it creates all the required files and Directories
