@@ -19,7 +19,7 @@ read -p "Enter Your Project Name :" project_name
 if [ -d "../projects/$project_name" ]
 # -d verifies whether there is a directory exists or not
 then
-echo -e "$(red) Project Already Exists $(reset)"
+echo -e "${red} Project Already Exists ${reset}"
 exit 1
 else
 #it creates all the required files and Directories
@@ -32,9 +32,9 @@ touch "../projects/$project_name/README.md"
 fi
 #we can also create these files using advanced features of Linux Like Directly ::: mkdir "../Projects/Project_name/{src,docs,logs,config}
 echo
-echo "Project Named '$project_name' Is Successfully Created with its Related Files"
+echo -e "${green} Project Named '$project_name' Is Successfully Created with its Related Files ${reset}"
 echo "$(date) : Project '$project_name' is created successfully.">> ../logs/toolkit.log
-echo "Do You Want to enter into project $project_name (y/n)"
+echo -e "${magentha} Do You Want to enter into project $project_name (y/n) ${reset}"
 read input
 if [ "$input" == "y" ] || [ "$input" == "Y" ];
 then
@@ -42,8 +42,8 @@ cd "../projects/$project_name" && exec bash
 #  launches a new shell it tells the script to open a new nested shell inside the target directory
 elif [ "$input" == "n" ] || [ "$input" == "N" ];
 then
-echo "Exiting"
+echo -e "${cyan}Exiting ${reset}"
 else
-echo "Invalid Input"
+echo -e "${red} Invalid Input ${reset}"
 fi
 read -p "Press Enter to return to Main Menu...."
