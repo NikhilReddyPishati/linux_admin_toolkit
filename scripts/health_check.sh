@@ -10,8 +10,6 @@ black="\E[30m"
 reset="\e[0m"
 
 
-
-
 echo -e "${blue} =================================================== ${reset}"
 echo
 echo -e "${green}                          HEALTH CHECK ${reset}"
