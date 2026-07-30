@@ -26,12 +26,14 @@ echo "7.Exit"
 read -p "Enter Your Choice : " choice
 echo
 case $choice in
-1) echo
+#Here Indentation Doesn't Matter But I I used It for Good Presentation
+1)
+echo
 echo -e "${yellow} Checking Common Services :  ${reset}"
 services=("cron" "ssh" "docker")
 for service in "${services[@]}"
 do
-        if systemctl list-unit-files | grep -qw "$service.service" >/dev/null 2>&1
+        if systemctl list-unit-files | grep -qw "$service.service" >/dev/null 2>&1 
         then
                 if systemctl is-active --quiet "$service"
                 then
@@ -43,7 +45,9 @@ do
         echo -e "${red} ❌ $service is not installed ${reset}"
         fi
 done ;;
-2) echo
+
+2)
+echo
 read -p "Enter the Service name in small letters To Start :" Service
 if systemctl list-unit-files --type=service | grep -qw "$Service.service"
 then
@@ -57,7 +61,9 @@ fi
 else
 echo -e "${red} ❌ $Service is not installed"
 fi ;;
-3) echo
+
+3) 
+echo
 read -p "Enter The Service name to be Stopped : " Service
 if systemctl list-unit-files --type=service | grep "$Service.service"
 then
@@ -71,7 +77,9 @@ fi
 else
 echo "$Service is not installed"
 fi;;
-4) echo
+
+4)
+echo
 read -p "Enter the Service name in small letters To Restart :" Service
 if systemctl list-unit-files --type=service | grep -qw "$Service.service"
 then
@@ -85,7 +93,9 @@ fi
 else
 echo -e "${red} ❌ $Service is not installed"
 fi ;;
-5) echo
+
+5) 
+echo
 read -p "Enter the Service name in small letters To Enable :" Service
 if systemctl list-unit-files --type=service | grep -qw "$Service.service"
 then
@@ -99,7 +109,9 @@ fi
 else
 echo -e "${red} ❌ $Service is not installed"
 fi ;;
-6) echo
+
+6) 
+echo
 read -p "Enter the Service name in small letters To Disable 🧰 :" Service
 if systemctl list-unit-files --type=service | grep -qw "$Service.service"
 then
@@ -113,7 +125,10 @@ fi
 else
 echo -e "${red} ❌ $Service is not installed"
 fi ;;
-7) echo "Good Bye"
+
+7) 
+echo "Good Bye"
 exit;;
+
 *) echo "invalid Input";;
 esac
