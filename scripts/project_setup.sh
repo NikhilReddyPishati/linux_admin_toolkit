@@ -23,13 +23,14 @@ echo -e "${red} Project Already Exists ${reset}"
 exit 1
 else
 #it creates all the required files and Directories
-mkdir "../projects/$project_name"
-mkdir "../projects/$project_name/src"
-mkdir "../projects/$project_name/docs"
-mkdir "../projects/$project_name/logs"
-mkdir "../projects/$project_name/config"
-touch "../projects/$project_name/README.md"
-fi
+mkdir "../projects/$project_name" # It Creates The Main Project Directory
+mkdir "../projects/$project_name/src" #It creates the Src Directory
+mkdir "../projects/$project_name/docs" # It creates The Docs Directory
+mkdir "../projects/$project_name/logs" # It creates the Logs Directory 
+mkdir "../projects/$project_name/config" #It Creates Config Directory
+touch "../projects/$project_name/README.md" # It Creates the README file where the Total Information Of The Project is Stored
+#But The Linux User has To Create Files Which Has to be Used For THeir Development
+fi 
 #we can also create these files using advanced features of Linux Like Directly ::: mkdir "../Projects/Project_name/{src,docs,logs,config}
 echo
 echo -e "${green} Project Named '$project_name' Is Successfully Created with its Related Files ${reset}"
