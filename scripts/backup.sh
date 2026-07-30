@@ -34,5 +34,5 @@ echo
 tar -tf "../backups/$backup_name"
 else
 echo "exiting"
-fi
+fi #this is for first if condition
 fi
