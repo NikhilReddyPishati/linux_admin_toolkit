@@ -17,7 +17,7 @@ echo
 echo -e "${magentha} =============================================================================================================== ${reset}"
 echo
 echo -e "${cyan}                                              Total Disk Used   ${reset}"
-echo "$(df -h)"
+echo "$(df -h)" #we used $ because we need to print disk used storage
 echo
 echo -e "${yellow} Project size ${reset}" $(du -sh)
 echo
