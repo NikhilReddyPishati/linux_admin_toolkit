@@ -22,14 +22,14 @@ echo "8. ❤️‍❤️ Health Check"
 echo "9. 👋 Exit"
 read -p " Enter your choice :  " choice
 case $choice in
-1)./system_info.sh;;
-2)./project_setup.sh;;
-3)./backup.sh;;
-4)./user_management.sh;;
-5)./disk_monitor.sh;;
-6)./memory_monitor.sh;;
-7)./service_manager.sh;;
-8)./health_check.sh;;
+1)./system_info.sh;; #Which Provides Total Information About System
+2)./project_setup.sh;; # Which Creates Total Required Folders (Directory's) and Files
+3)./backup.sh;; # It Displays the Backups
+4)./user_management.sh;; # It Provides Lot of Options
+5)./disk_monitor.sh;; # It displays the total Information about Disk
+6)./memory_monitor.sh;; # It Dispalys Total Memory Details
+7)./service_manager.sh;; # It Displays the total Services which Have Been Provided By Network
+8)./health_check.sh;; #it Displays the Total Health of the System
 9)echo -e "${RED} Thank you for using Linux Administration toolkit";;
 *)echo "Invalid Input Please Choose 1--9 "
 esac
