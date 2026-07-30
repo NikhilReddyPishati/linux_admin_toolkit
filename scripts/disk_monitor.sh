@@ -23,6 +23,7 @@ echo -e "${yellow} Project size ${reset}" $(du -sh)
 echo
 echo -e "${cyan}                                             Connected Storage Devices      ${reset}"
 echo "$(lsblk)"
+# Displays the Connected External storages
 echo
 echo -e "${cyan}                                  List of Top 10 Storage Consuming Directories     ${reset}"
 du -h "$HOME" 2>/dev/null | sort -hr | head -10
