@@ -12,6 +12,7 @@ echo
 echo    -e "${blue}     💾BACKUP MANAGER${reset}"
 echo
 echo "******************************************"
+
 read -p "Please enter your directory to Backup : " bck_file
 bck_file="../projects/$bck_file"
 if [ ! -d "$bck_file" ]
@@ -26,7 +27,7 @@ echo
 echo -e "${green} Backup Created${reset}"
 echo -e "${yellow} Backup file : $backup_name${reset}"
 echo "$(date '+%y%m%d_%H%M%S'): Backup created successfully,Backup FileName:$backup_name" >> ../logs/toolkit.log
-read -p "If you want to see content of the file press only (y/n)" choice
+read -p -e "${yellow} If you want to see content of the file press only (y/n) ${reset} " choice
 if [ "$choice" = "y" ] |[ "$choice" = "Y" ] 
 then
 echo
