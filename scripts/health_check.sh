@@ -26,26 +26,42 @@ echo "7.Back to Main Menu"
 read -p "Enter your Choice :" input
 # we have used Case Operation Because we are displaying options for user
 case $input in
-1) echo
+1) 
+echo
 echo " CPU usage is "
 top -bn1 | grep "Cpu(s)" ;;
-2) echo
+
+2)
+echo
 echo -e "${blue} Memory Usage ${reset}:"
 free -h;;
-3)echo
+
+3)
+echo
 echo -e "${magentha} Disk usage : ${reset}"
 df -h;;
-4) echo
+
+4)
+echo
 echo -e "${cyan} System Uptime ${reset}"
 uptime;;
-5) echo
+
+5)
+echo
 echo -e "${yellow} Top 5 Memory Consuming Processes : ${reset}"
 ps -eo pid,user,%mem,%cpu,comm --sort=-%mem | head -6 ;;
-6) echo
+
+6)
+echo
 echo -e "${green} Top 5 CPU Consuming Processes : ${reset}"
 ps -eo pid,user,%cpu,%mem,comm --sort=-%cpu | head -6 ;;
-7) echo
+
+7) 
+echo
 echo "Returning to Main Menu"
 ./health_check.sh ;;
-*) echo "invalid Input";;
+
+*) # which decides whether the user input is between 1 -- 7, If User Chooses above or which is not equal to the provided options
+echo "invalid Input";;
+
 esac
