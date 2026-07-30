@@ -9,12 +9,13 @@ white="\E[37m"
 black="\E[30m"
 reset="\e[0m"
 
-
+echo
 echo -e "${blue} =================================================== ${reset}"
 echo
 echo -e "${green}                          HEALTH CHECK ${reset}"
 echo
 echo -e "${blue} =================================================== ${reset}"
+echo
 echo "1.CPU Usage"
 echo "2.Memory Usage"
 echo "3.Disk Usage"
@@ -23,6 +24,7 @@ echo "5.Top 5 Memory Consuming Processes"
 echo "6.Top 6 CPU Consuming Processes"
 echo "7.Back to Main Menu"
 read -p "Enter your Choice :" input
+# we have used Case Operation Because we are displaying options for user
 case $input in
 1) echo
 echo " CPU usage is "
