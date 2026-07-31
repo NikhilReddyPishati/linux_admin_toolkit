@@ -22,11 +22,11 @@ A linux Administration Toolkit built using Bash Scripting to automate common sys
 ### Project Structure
 linux_admin_toolkit/
 
-├── scripts/
+├── scripts/ its a directory
 
-├── logs/
+├── logs/ its a directory
 
-├── backups/
+├── backups/ its a directory
 
 ├── projects/
 
