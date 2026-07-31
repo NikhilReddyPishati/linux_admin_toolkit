@@ -13,7 +13,7 @@ A linux Administration Toolkit built using Bash Scripting to automate common sys
 - Project Setup Automation
 - Logging
 
-  ## Technologies Used
+## Technologies Used
   - Bash Shell
   - Linux
   - Git
@@ -37,7 +37,7 @@ linux_admin_toolkit/
 Testing jenkins webhook
 
 ## How to Run
-'''bash
+'''bash 
 
 chmod +x scripts/*.sh
 
