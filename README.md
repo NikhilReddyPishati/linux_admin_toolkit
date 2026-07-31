@@ -22,15 +22,15 @@ A linux Administration Toolkit built using Bash Scripting to automate common sys
 ### Project Structure
 linux_admin_toolkit/
 
-├── scripts/ its a directory
+├── scripts/      its a directory
 
-├── logs/ its a directory
+├── logs/         its a directory
 
-├── backups/ its a directory
+├── backups/      its a directory
 
-├── projects/ its a directory
+├── projects/     its a directory
 
-├── README.md its a text file which dispalys the content
+├── README.md     its a text file which dispalys the content
 
 └── VERSION
 
