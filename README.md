@@ -30,7 +30,7 @@ linux_admin_toolkit/
 
 ├── projects/ its a directory
 
-├── README.md
+├── README.md its a text file which dispalys the content
 
 └── VERSION
 
