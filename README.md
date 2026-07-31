@@ -32,7 +32,7 @@ linux_admin_toolkit/
 
 ├── README.md     its a text file which dispalys the content
 
-└── VERSION
+└── VERSION       its tells about version
 
 Testing jenkins webhook
 
