@@ -28,7 +28,7 @@ linux_admin_toolkit/
 
 ├── backups/ its a directory
 
-├── projects/
+├── projects/ its a directory
 
 ├── README.md
 
