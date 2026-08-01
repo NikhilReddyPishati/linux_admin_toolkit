@@ -1,7 +1,7 @@
 #!/bin/bash
 
 green="\e[32m" #This belongs to green color which is used to dispaly the content in color
-red="\e[31m"
+red="\e[31m"   #This belongs to red color which is used to display the content in color
 yellow="\e[33m"
 blue="\e[34m"
 magentha="\e[35m"
