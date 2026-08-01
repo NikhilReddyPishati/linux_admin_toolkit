@@ -1,6 +1,6 @@
 #!/bin/bash
 
-green="\e[32m"
+green="\e[32m" #This belongs to green color which is used to dispaly the content in color
 red="\e[31m"
 yellow="\e[33m"
 blue="\e[34m"
