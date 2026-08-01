@@ -15,6 +15,7 @@ echo
 echo -e "${magentha}        👤 USER MANAGEMENT  ${reset}           "
 echo
 echo -e "${yellow} *************************************${reset}"
+echo -e "${cyan} Please Choose Any One Option ${reset}"
 echo "1. User Information"
 echo "2. Add User"
 echo "3. Delete User"
