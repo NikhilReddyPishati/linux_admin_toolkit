@@ -7,8 +7,8 @@ blue="\e[34m"     #This belongs to blue color which is used to dispaly the conte
 magentha="\e[35m" #This belongs to magentha color which is used to display the content in color
 cyan="\e[36m"     #This belongs to cyan color which is used to display the content in color
 white="\E[37m"    #This belongs to White color which is used to display the content in color
-black="\E[30m"
-reset="\e[0m"
+black="\E[30m"    #This belongs to  Black color which is used to display the content in color
+reset="\e[0m"     #This is used to reset the color which is used for displaying the content
 
 echo -e "${yellow} *************************************${reset}"
 echo
