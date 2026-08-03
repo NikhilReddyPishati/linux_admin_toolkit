@@ -16,9 +16,9 @@ echo -e "${magentha}        👤 USER MANAGEMENT  ${reset}           "
 echo
 echo -e "${yellow} *************************************${reset}"
 echo -e "${cyan} Please Choose Any One Option ${reset}"
-echo "1. User Information"
-echo "2. Add User"
-echo "3. Delete User"
+echo "1. User Information" #if user press this option total info of user get displayed
+echo "2. Add User" # This Option helps user to add another user if user enters password correctly
+echo "3. Delete User" # This Helps useer to delete the user if user enter passwor dcorrectly
 echo "4. Change password"
 echo "5. Lock User"
 echo "6. Unlock User"
