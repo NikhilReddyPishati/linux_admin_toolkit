@@ -61,11 +61,11 @@ echo -e "${red} Sorry No Sudo Access ${reset}"
 fi
 echo
 echo -e " ${magentha} Current Shell :${reset}" $SHELL
-echo -e "${yellow} *************************************${reset}"
+echo -e "${yellow}##################################################${reset}"
 echo
 echo -e "${green}             👤 USER INFORMATION ENDED    ${reset}"
 echo
-echo -e "${yellow} *************************************${reset}"
+echo -e "${yellow} ##################################################${reset}"
 ;;
 
 2)
