@@ -65,3 +65,5 @@ echo "Returning to Main Menu"
 echo "invalid Input";;
 
 esac
+echo "Please Enter Another choice if you want to see "
+read -p 
