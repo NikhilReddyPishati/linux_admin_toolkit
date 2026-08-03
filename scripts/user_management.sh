@@ -190,7 +190,7 @@ fi ;;
 echo 
 echo -e "${blue} =================================================== ${reset}"
 echo
-echo -e "${yellow}                     LISTING ALL USERS ${reset}"
+echo -e "${yellow}               LISTING ALL USERS ${reset}"
 echo
 echo -e "${blue} =================================================== ${reset}"
 cut -d: -f1 /etc/passwd
