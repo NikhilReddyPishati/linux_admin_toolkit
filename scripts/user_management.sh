@@ -22,7 +22,7 @@ echo "3. Delete User" # This Helps useer to delete the user if user enter passwo
 echo "4. Change password" # This Helps the user to change the password of the current logged in user
 echo "5. Lock User"  # This just stop the user to login to the locked account
 echo "6. Unlock User" 
-echo "7. List all the users"
+echo "7. List all the users "
 echo "8. Exit"
 read -p "Enter Your Choice :" choice
 case $choice in
