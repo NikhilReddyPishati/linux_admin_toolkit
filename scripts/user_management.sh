@@ -28,7 +28,7 @@ read -p "Enter Your Choice :" choice
 case $choice in
 
 1)
-echo -e "$yellow} *************************************${reset}"
+echo -e "$yellow} *************************************${reset}" #This Line Prints in yellow color because we have created variable named yellow according to the value
 echo
 echo -e "${magentha}        👤 USER INFORMATION  ${reset}           "
 echo
