@@ -10,11 +10,11 @@ white="\E[37m"    #This belongs to White color which is used to display the cont
 black="\E[30m"    #This belongs to  Black color which is used to display the content in color
 reset="\e[0m"     #This is used to reset the color which is used for displaying the content
 
-echo -e "${yellow} *************************************${reset}"
+echo -e "${yellow} *****************************************${reset}"
 echo
 echo -e "${magentha}        👤 USER MANAGEMENT  ${reset}           "
 echo
-echo -e "${yellow} *************************************${reset}"
+echo -e "${yellow} *****************************************${reset}"
 echo -e "${cyan} Please Choose Any One Option ${reset}"
 echo "1. User Information" #if user press this option total info of user get displayed
 echo "2. Add User" # This Option helps user to add another user if user enters password correctly
@@ -28,11 +28,11 @@ read -p "Enter Your Choice :" choice
 case $choice in
 
 1)
-echo -e "$yellow} *************************************${reset}" #This Line Prints in yellow color because we have created variable named yellow according to the value
+echo -e "$yellow} ##################################################${reset}" #This Line Prints in yellow color because we have created variable named yellow according to the value
 echo
 echo -e "${magentha}        👤 USER INFORMATION  ${reset}           "
 echo
-echo -e "${yellow} *************************************${reset}"
+echo -e "${yellow}##################################################${reset}"
 echo
 echo -e "${white} Current logged-in User :${reset}" $(whoami)
 #Displays current user Name
