@@ -56,14 +56,12 @@ echo
 echo -e "${green} Top 5 CPU Consuming Processes : ${reset}"
 ps -eo pid,user,%cpu,%mem,comm --sort=-%cpu | head -6 ;;
 
-7) 
+7)
 echo
-echo "Returning to Main Menu"
+echo "Returning to Health Check Menu"
 ./health_check.sh ;;
 
 *) # which decides whether the user input is between 1 -- 7, If User Chooses above or which is not equal to the provided options
 echo "invalid Input";;
 
 esac
-echo "Please Enter Another choice if you want to see " input
-read input
