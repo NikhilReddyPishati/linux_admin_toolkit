@@ -56,6 +56,4 @@ echo
 echo -e "${cyan}                                                  💾 DISK MONITORING ENDED    ${reset}"
 echo
 echo -e "${magentha} =============================================================================================================== ${reset}"
-read -p "Press Enter to Exit"
-exit 1
 
