@@ -54,7 +54,7 @@ ps -eo pid,user,%mem,%cpu,comm --sort=-%mem | head -6 ;;
 6)
 echo
 echo -e "${green} Top 5 CPU Consuming Processes : ${reset}"
-ps -eo pid,user,%cpu,%mem,comm --sort=-%cpu | head -6 ;;
+ps -eo pid,user,%cpu,%mem,comm --sort=-%cpu | head -6 ;; #This Line prints the output in a order
 
 7)
 echo
