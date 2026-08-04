@@ -58,7 +58,7 @@ ps -eo pid,user,%cpu,%mem,comm --sort=-%cpu | head -6 ;;
 
 7)
 echo
-echo "Returning to Health Check Menu"
+echo "Returning to Main Menu"
 ./health_check.sh ;;
 
 *) # which decides whether the user input is between 1 -- 7, If User Chooses above or which is not equal to the provided options
