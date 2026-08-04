@@ -30,7 +30,7 @@ case $choice in
 6)./memory_monitor.sh;; # It Dispalys Total Memory Details
 7)./service_manager.sh;; # It Displays the total Services which Have Been Provided By Network
 8)./health_check.sh;; #it Displays the Total Health of the System
-9)echo -e "${RED} Thank you for using Linux Administration toolkit";;
+9)echo -e "${RED} Thank you for using Linux Administration toolkit${RESET}";;
 *)echo "Invalid Input Please Choose 1--9 "
 esac
 if [ $choice -eq 9 ]
