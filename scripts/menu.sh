@@ -1,6 +1,6 @@
 #!/bin/bash
-RED="\e[31m"
-RESET="\e[0m"
+red="\e[31m"
+reset="\e[0m"
 while true
 do
 echo "****************************************************************"
@@ -30,7 +30,7 @@ case $choice in
 6)./memory_monitor.sh;; # It Dispalys Total Memory Details
 7)./service_manager.sh;; # It Displays the total Services which Have Been Provided By Network
 8)./health_check.sh;; #it Displays the Total Health of the System
-9)echo -e "${RED} Thank you for using Linux Administration toolkit${RESET}";;
+9)echo -e "${red} Thank you for using Linux Administration toolkit${reset}";;
 *)echo "Invalid Input Please Choose 1--9 "
 esac
 if [ $choice -eq 9 ]
