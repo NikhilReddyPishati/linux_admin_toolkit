@@ -218,6 +218,7 @@ read -p "press Enter to Return to Main Menu .."
 8)
 echo "Good Bye"
 exit 1 
+#This Option Exit from the Main menu and Displays GoodBye
 ;;
 
 *) echo "invalid Input ";;
