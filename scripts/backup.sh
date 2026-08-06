@@ -24,7 +24,7 @@ mkdir -p ../backups
 backup_name="backup_$(date +%y%m%d_%H%M%S).tar.gz"
 tar -czf "../backups/$backup_name" "$bck_file"
 echo
-echo -e "${green} Backup Created${reset}"
+echo -e "${green} Backup Created${reset}"#This sows the created Message
 echo -e "${yellow} Backup file : $backup_name${reset}"
 echo "$(date '+%y%m%d_%H%M%S'): Backup created successfully,Backup FileName:$backup_name" >> ../logs/toolkit.log
 read -p -e "${yellow} If you want to see content of the file press only (y/n) ${reset} " choice
