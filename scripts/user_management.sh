@@ -16,12 +16,19 @@ echo -e "${magentha}        👤 USER MANAGEMENT  ${reset}           "
 echo
 echo -e "${yellow} *****************************************${reset}"
 echo -e "${cyan} Please Choose Any One Option ${reset}"
-echo "1. User Information" #if user press this option total info of user get displayed
-echo "2. Add User" # This Option helps user to add another user if user enters password correctly
-echo "3. Delete User" # This Helps useer to delete the user if user enter passwor dcorrectly
-echo "4. Change password" # This Helps the user to change the password of the current logged in user
-echo "5. Lock User"  # This just stop the user to login to the locked account
+#This is an option where it depends on the user input
+echo "1. User Information"
+ #if user press this option total info of user get displayed
+echo "2. Add User" 
+# This Option helps user to add another user if user enters password correctly
+echo "3. Delete User" 
+# This Helps useer to delete the user if user enter passwor dcorrectly
+echo "4. Change password" 
+# This Helps the user to change the password of the current logged in user
+echo "5. Lock User"  
+# This just stop the user to login to the locked account
 echo "6. Unlock User" 
+#
 echo "7. List all the users "
 echo "8. Exit"
 read -p "Enter Your Choice :" choice
