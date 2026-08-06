@@ -34,6 +34,7 @@ echo "7. List all the users "
 echo "8. Exit"
 #This option helps the user to Exit from the Main menu
 read -p "Enter Your Choice :" choice
+#This takes input from user and sends to the case statement
 case $choice in
 
 1)
