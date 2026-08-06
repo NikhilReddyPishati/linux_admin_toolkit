@@ -35,6 +35,7 @@ echo "8. Exit"
 #This option helps the user to Exit from the Main menu
 read -p "Enter Your Choice :" choice
 #This takes input from user and sends to the case statement
+
 case $choice in
 
 1)
@@ -111,7 +112,8 @@ exit 1
 else
 echo "invalid Input"
 fi
-echo ;;
+echo 
+;;
 
 3)
 echo "Please enter username to be Deleted"
@@ -159,7 +161,8 @@ echo -e "${red} Unable to change Password ${reset} "
 fi
 else
 echo -e "${red} $Name not found ${reset} "
-fi ;;
+fi
+ ;;
 
 5)
 echo
@@ -194,7 +197,8 @@ echo "Unable to unlock $Name "
 fi
 else
 echo "no user found"
-fi ;;
+fi
+ ;;
 
 7)
 echo 
@@ -213,7 +217,8 @@ read -p "press Enter to Return to Main Menu .."
 
 8)
 echo "Good Bye"
-exit 1 ;;
+exit 1 
+;;
 
 *) echo "invalid Input ";;
 esac #end case statements
