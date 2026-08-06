@@ -28,8 +28,9 @@ echo "4. Change password"
 echo "5. Lock User"  
 # This just stop the user to login to the locked account
 echo "6. Unlock User" 
-#
+#This is an option which unlocks the user
 echo "7. List all the users "
+#This option helps the user to list all users
 echo "8. Exit"
 read -p "Enter Your Choice :" choice
 case $choice in
