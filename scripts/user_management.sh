@@ -32,6 +32,7 @@ echo "6. Unlock User"
 echo "7. List all the users "
 #This option helps the user to list all users
 echo "8. Exit"
+#This option helps the user to Exit from the Main menu
 read -p "Enter Your Choice :" choice
 case $choice in
 
