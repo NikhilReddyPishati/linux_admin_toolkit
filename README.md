@@ -45,3 +45,5 @@ chmod +x scripts/*.sh
 
 ## Author
 Nikhil Reddy Pishati
+
+⭐ If you found this repository useful, feel free to star it!
